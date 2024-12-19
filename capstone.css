@@ -17,6 +17,7 @@
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid grey;
+    
   }
   nav .logo{
     font-size: 42px;
@@ -34,8 +35,9 @@
   
   header h1 {
     font-size:120px;
-    margin: 60px 0;
+    margin-bottom: 60px;
     text-align: center;
+    margin-top: 96px;
   }
   
   header img {
@@ -43,6 +45,7 @@
     height: 100%;
     border-radius: 20px;
     margin-bottom: 40px;
+    padding-bottom: 9em;
   }
   
   main {
@@ -57,11 +60,12 @@
   
     
     cursor: pointer;
-    transition: transform 1s;
+    transition: transform 4s;
+    margin-bottom: 48px;
   }
   
   .catagory img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
   
   .catagory  img {
@@ -69,31 +73,28 @@
     height: 100%;
     
   }
-  .pictures{
-    /* padding:0px 48px; */
-  }
   
-  /* .edit {
-    margin-left: 48px;
-    padding:0 48px;
-    
-  } */
   
   .edit h3 {
     margin-bottom: 5px;
     color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
   }
   
   .edit p {
-    font-size: 14px;
+    font-size: 17px;
     color: rgba(255,255,255,0.7);
+    font-weight: lighter;
   }
   
-  footer p {
-    font-size: 48px;
-    line-height: 1.5;
-    max-width: 900px;
+  .info p {
+    font-size: 3rem;
+    max-width: 800px;
+    
+    padding-bottom: 100px;
   }
+  
   
   .logo {
     font-weight: bold;
@@ -103,10 +104,13 @@
   }
   #projects-hero {
     position: relative;
-    height: 500px;
+    height: 100%;
     margin-bottom: 80px;
     border-radius: 15px;
     overflow: hidden;
+    width: 100%;
+    
+
   }
   
   .hero-image {
@@ -120,18 +124,27 @@
     bottom: 0;
     left: 0;
     padding: 40px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    
     width: 100%;
+    h2{
+      font-size: 34px;
+      font-weight: 500;
+      padding-bottom: 10px;
   }
+  p{
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  }
+  
   
   .hero-button {
     display: inline-block;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0, 0, 0, 0.1);
     color: white;
     padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
-    backdrop-filter: blur(10px);
     margin-top: 20px;
     border: 1px solid rgba(255,255,255,0.2);
     transition: all 0.3s ease;
@@ -144,12 +157,11 @@
   #metrics {
     margin: 120px 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr;
   }
   
   #metrics h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 500;
   }
   
@@ -173,18 +185,19 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: rgba(255,255,255,0.1);
+    
+    background: grey;
   }
   
   .metrics-grid h3 {
-    font-size: 64px;
+    font-size: 48px;
     margin-bottom: 10px;
     font-weight: 500;
   }
   
   .metrics-grid p {
     color: rgba(255,255,255,0.7);
-    font-size: 16px;
+    font-size: 20px;
   }
   
   
@@ -202,17 +215,19 @@
   form input {
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 15px;
+    /* padding: 15px; */
     color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     text-align: center;
+    width: 3.5em;
+    height: 4em;
   }
   
   form button {
     grid-column: span 5;
     padding: 15px;
-    border: none;
-    border-radius: 5px;
+    /* border: none; */
+    /* border-radius: 11115px; */
     cursor: pointer;
     font-size: 16px;
   }
@@ -221,12 +236,15 @@
     background: #ff4444;
     color: white;
     margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    max-width: 400px;
   }
   
   form button[type="button"] {
     background: transparent;
-    color: #666;
-    border: 1px solid #333;
+    font-size: 15px;
+
   }
   
   @media (max-width: 768px) {
@@ -244,32 +262,35 @@
   }
   
   .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
+    border-bottom: 1px solid grey;
   }
   
   .container h2 {
     text-align: center;
     font-size: 48px;
     margin-bottom: 50px;
-    font-weight: 600;
+    font-weight: 500;
   }
   
-  .testimonials-grid {
+  .Client-grid {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
-    padding: 20px;
+    padding-bottom: 48px;
     overflow-y: auto;
+  
     
   }
   
-  .testimonial-card {
+  .client-card {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     padding: 24px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     height: 40%;
+    min-width: 288px;
     
   }
   
@@ -288,19 +309,21 @@
   }
   
   .client-details h3 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 4px;
   }
   
   .client-details p {
-    font-size: 14px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.7);
   }
   
-  .testimonial-text {
-    font-size: 16px;
+  .client-text {
+    font-size: 20px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.9);
+    border-left: 0.5px solid grey;
+    padding-left: 30px;
   }
   .contact {
     flex: 1;
@@ -308,13 +331,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 12rem;
+
   }
   
   h1 {
-    font-size: 2rem;
+    font-size: 1.75em;
     font-weight: normal;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
   }
   
   form {
